@@ -46,9 +46,13 @@ export default function Friends() {
       </div>
       <div className="mt-11 flex h-[550px] flex-col gap-4">
         <div className="h-10 w-full rounded-xl border-2 border-zinc-950 bg-white flex px-3 items-center justify-between">
-          <span>Search with love ...</span>
+          <input
+            className="w-full focus-visible:outline-none"
+            placeholder="Serch with love ..."
+          />
           <span>🔍</span>
         </div>
+
         {datas.map((item) => {
           return (
             <div className={`friend-card`}>
