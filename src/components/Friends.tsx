@@ -36,6 +36,7 @@ export default function Friends() {
       color: "bg-teal-400",
     },
   ];
+
   return (
     <div className="flex h-[700px] w-full flex-col bg-amber-400 p-6">
       <div className="flex items-center gap-16 mt-8">
@@ -67,7 +68,11 @@ export default function Friends() {
                   <p className="text-sm text-slate-400">{item.job}</p>
                 </div>
               </div>
-              <div className="invite-btn">invite</div>
+              <button
+                className={`invite-btn ${item.invite}? bg-amber-400 : bg-slate-950 text-white`}
+              >
+                invite
+              </button>
             </div>
           );
         })}
