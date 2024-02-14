@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .weather-card {
+    @apply flex items-center justify-between rounded-2xl border-2 border-b-4 border-slate-950 p-3;
+  }
+
+  .tag-card {
+    @apply flex h-[180px] items-center justify-center rounded-2xl border-2 border-zinc-950 text-5xl text-black;
+  }
+
+  .friend-card {
+    @apply flex h-[62px] items-center justify-between rounded-lg border-2 border-zinc-950 bg-white px-2 py-1;
+  }
+
+  .invite-btn {
+    @apply flex h-9 w-16 items-center justify-center rounded-xl border-2 border-zinc-950 bg-amber-400 text-center text-sm;
+  }
+}
